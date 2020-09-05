@@ -180,7 +180,7 @@ codamenu()
 # 4: Heidelberger and Welch: convergence (like Geweke, but using Cramer-von-Mises statistic instead of t)
 # + DIC
 # + credible intervals: http://people.stat.sc.edu/Hitchcock/stat535slidesday3.pdf
-# ESS (aktivnyi razmer byborki): if ESS << S (number of samples), it's bad (see Tsyplakov, 2007); n with respect to correlation
+# ESS: if ESS << S (number of samples), it's bad (see Tsyplakov, 2007); n with respect to correlation
 # ? inefficiency factors
 # IACT (autocorrelation time, see Yu, Meyer), rho_k: high AC = slow mixing
 # traceplots: should be as WN for good convergence + mixing (WN is good)
