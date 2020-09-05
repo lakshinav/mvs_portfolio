@@ -1,3 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This script is written in 2014 
+% by Valeriya Lakshina (lakshinav@gmail.com)
+% for article Is it possible to break the «curse of dimensionality»? Spatial specifications of multivariate volatility models
+% Source: https://github.com/lakshinav/papers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% Download
 % 01/01/2011 - 22/02/2014
 % 5 industries: oil and gas; banks; utilities; industrial machinery; IT. From SnP500
