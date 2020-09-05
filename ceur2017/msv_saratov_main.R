@@ -107,7 +107,7 @@ require(rstan)
 rstan_options(auto_write = TRUE)
 options(mc.cores = parallel::detectCores())
 
-file.edit('../winbugs/msv_t.stan')
+file.edit('./msv_t.stan')
 
 # d <- as.matrix(lr[[1]]*1e2)
 d <- as.matrix(residuals(est_gg[['fit']][[1]]))
@@ -115,7 +115,7 @@ TT <- nrow(d)
 nn <- ncol(d)
 
 msv_t1<- stan( # no autoregression in volatility (no M matrix)
-  file = "../winbugs/msv_t.stan", 
+  file = "./msv_t.stan", 
   data = list(TT = TT, n=nn, y=d, oos=est_gg[['forc']][[1]]@model$n.roll+1, mu=rep(0, 2)),
   chains = 2,             # number of Markov chains
   warmup = 1000,          # number of warmup iterations per chain
