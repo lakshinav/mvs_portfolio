@@ -1,2 +1,4 @@
-# mvs_portfolio
-Code for paper "Do portfolio investors need to consider the asymmetry of returns on the Russian stock market?", J Econ Asymmetry, 2020
+# Do portfolio investors need to consider the asymmetry of returns on the Russian stock market?
+Code for paper in (Journal of Economic Asymmetries)[https://www.sciencedirect.com/science/article/pii/S170349491930091X], 2020.
+
+This paper, following (Ghalanos, 2012), uses the simple method of embedding skewness in asset allocation based on the Taylor expansion of the investor utility function up to the third term and maximizing it by portfolio weights. This approach also enables us to consider investor risk aversion. Time-dependent multivariate asset moments are obtained via the GO-GARCH volatility model with a normal-inverse Gaussian distribution for the error term. By means of parma package (Ghalanos & Pfaff, 2016) we explore the performance of the usual 2 moment utility and its 3 moment counterpart for a portfolio consisted of twenty assets traded on the Russian stock market. The results demonstrate that the 3 moment utility significantly outperforms the 2 moment utility by SD, MAD and CVaR for low levels of absolute risk aversion and by portfolio returns and investor utility level during the whole forecast period.
