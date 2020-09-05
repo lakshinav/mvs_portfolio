@@ -10,7 +10,7 @@ In this paper this fact is implemented via maximization of the investor’s expe
 Consequently if, for example, prices move upwards, the optimal hedge ratio is less than under the assumption of absolute risk aversion and vice versa. 
 In the paper eight portfolios, consisted of Russian blue-chip stocks and futures, are estimated. 
 Multivariate volatility models GO-GARCH and cop-GARCH are applied to estimate the conditional covariances and variances of hedged portfolio returns. 
-There are additional parameters in the error term distribution, including skewness parameter, due to the existence of asymmetry effects in the financial assets returns’ distribution [Kroner, Ng, 1998].  
+There are additional parameters in the error term distribution, including skewness parameter, due to the existence of asymmetry effects in the financial assets returns’ distribution [Kroner, Ng, 1998]. 
 The hedge effectiveness is estimated on the out-of-sample period using the maximum attainable risk reduction, unconditional variance of hedged portfolio returns and financial result. 
 It’s shown that in six cases cop-GARCH surpasses GO-GARCH in hedge. 
 Including the degree of risk aversion in the investor’s utility function together with above-mentioned volatility models allows to obtain hedge effectiveness from 24% to 65%.
