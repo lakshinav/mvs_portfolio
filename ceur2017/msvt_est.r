@@ -3,7 +3,7 @@ require(rstan)
 rstan_options(auto_write = TRUE)
 options(mc.cores = parallel::detectCores())
 
-file.edit('../winbugs/msv_t.stan')
+file.edit('./msv_t.stan')
 
 
 # mydir <- 'd:/stoch_vol_homestation/'
@@ -19,7 +19,7 @@ for (i1 in 6) {
   msv_t1 <- tryCatch(
     {
       msv_t1 <- stan( # no autoregression in volatility (no M matrix)
-        file = "../winbugs/msv_t.stan",
+        file = "./msv_t.stan",
         data = list(TT = TT, n=nn, y=d, oos=est_gg[['forc']][[i1]]@model$n.roll+1, mu=rep(0, 2)),
         chains = 2,             # number of Markov chains
         warmup = 1000,          # number of warmup iterations per chain
@@ -143,7 +143,7 @@ codamenu()
 # 4: Heidelberger and Welch: convergence (like Geweke, but using Cramer-von-Mises statistic instead of t)
 # + DIC
 # + credible intervals: http://people.stat.sc.edu/Hitchcock/stat535slidesday3.pdf
-# ESS (aktivnyi razmer byborki): if ESS << S (number of samples), it's bad (see Tsyplakov, 2007); n with respect to correlation
+# ESS: if ESS << S (number of samples), it's bad (see Tsyplakov, 2007); n with respect to correlation
 # ? inefficiency factors
 # IACT (autocorrelation time, see Yu, Meyer), rho_k: high AC = slow mixing
 # traceplots: should be as WN for good convergence + mixing (WN is good)
