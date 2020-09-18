@@ -1,9 +1,9 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This script is written in 2019
-% by Valeriya Lakshina (lakshinav@gmail.com)
-% for article Do portfolio investors need to consider the asymmetry of returns on the Russian stock market?
-% Source: https://github.com/lakshinav/papers/jea2020
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#############################################
+# This script is written in 2019
+# by Valeriya Lakshina (lakshinav@gmail.com)
+# for article Do portfolio investors need to consider the asymmetry of returns on the Russian stock market?
+# Source: https://github.com/lakshinav/papers/jea2020
+#############################################
 
 # hook up packages
 require(xts) # time series objects
