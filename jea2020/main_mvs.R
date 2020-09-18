@@ -1,3 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This script is written in 2019
+% by Valeriya Lakshina (lakshinav@gmail.com)
+% for article Do portfolio investors need to consider the asymmetry of returns on the Russian stock market?
+% Source: https://github.com/lakshinav/papers/jea2020
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 # hook up packages
 require(xts) # time series objects
 require(rugarch) # univariate garch
@@ -11,8 +18,7 @@ options(repos = c(CRAN = "http://cran.rstudio.com")) # when Rstudio not want to 
 
 install.packages("F:/r_packages_sources/parma_1.5-3.tar.gz", repos = NULL, type="source")
 
-setwd('d:\\Google Диск\\Nauka\\mvs_portfolio\\mvs_portfolio')
-setwd('f:/1work/mvs_portfolio_local/mvs_portfolio/mvs_portfolio/')
+setwd('my/path/')
 load('mvs12.RData') 
 # load("mvs_start.RData")
 source('mvs_functions.r')
